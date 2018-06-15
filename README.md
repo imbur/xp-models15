@@ -4,7 +4,7 @@ docker build -t thomas/models15 .
 ```
 *Step 2* -- Getting the `redis` image
 ```
-docker pull resid
+docker pull redis
 ```
 *Step 3* -- Creating the `main` cluster with decking
 ```
