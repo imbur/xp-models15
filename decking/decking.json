@@ -1,14 +1,15 @@
 {
   "images": {
-    "thomas/models15": "/Users/thomas/xp-models15/decking/dockerbase"
+    "thomas/models15": {
+	"path":"./dockerbase",
+	"context":"./dockerbase"
+    }
   },
   "containers": {
-
     "client": {
       "image": "thomas/models15",
       "dependencies": ["redis"]
     },
-
     "redis":{
       "image": "redis",
       "port":["6379:6379"]
@@ -16,8 +17,5 @@
   },
   "clusters": {
     "main": ["redis(1)","client(200)"]
-  },
-  "groups": {
-
   }
 }
