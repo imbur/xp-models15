@@ -1,7 +1,7 @@
 FROM lgsd/diamond
 MAINTAINER thomas
 
-ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
+ENV JAVA_HOME /usr/lib/jvm/java-se-8u40-ri-compact1
 ENV PATH $PATH:$JAVA_HOME/bin
 
 ADD java-se-8u40-ri-compact1 $JAVA_HOME/
